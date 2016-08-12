@@ -69,7 +69,11 @@ public class PersonDemo2
         // friend.x;
         // friend.y;
     }
-    
+    public void makeMutualFriend(Person friend)
+    {
+        this.addFriend(friend);
+        friend.addFriend(this);
+    }
     public void unfriend(Person nonFriend)
     {
         friends = friends.replace(nonFriend.name + " ", "");
