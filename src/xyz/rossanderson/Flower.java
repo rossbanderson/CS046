@@ -1,3 +1,5 @@
+package xyz.rossanderson.cs046;
+
 // Write a class that describes a flower. A flower has a location, a
 // constructor and a draw method.
 // The flower should look like the picture below:
@@ -6,7 +8,7 @@
 // The constructor takes the (x, y) coordinate of the upper left-hand
 // corner of the flower. The arrow points to the x,y coordinates of
 // the flower.
- 
+
 // There are four pink petals and a yellow center. Each petal and the
 // center is a circle with a diameter of 20. A circle is an ellipse in
 // which the width and height are both equal to the diameter of the
@@ -35,14 +37,15 @@
 // Here is how you would draw a circle of diameter 20 when the
 // surrounding rectangle has x, y coordinates of 30, 50
 //      Ellipse circle = new Ellipse(30, 50, 20,20);
-//      circle.draw(); 
+//      circle.draw();
 
-// Need help starting this question? In the lesson titled 
+// Need help starting this question? In the lesson titled
 // "Starting points: Problem Set Questions", go to the
-// problem titled "Problem Set 2 - Question 3" for some tips on 
-// how to begin. 
+// problem titled "Problem Set 2 - Question 3" for some tips on
+// how to begin.
 
 
+import xyz.rossanderson.cs046.Coloring.Color;
 
 public class Flower
 {
@@ -54,10 +57,10 @@ public class Flower
         this.x = theX;
         this.y = theY;
     }
-    
+
     /**
-    * This function draws the flower.
-    */
+     * This function draws the flower.
+     */
     public void draw()
     {
         Ellipse yPetal1 = new Ellipse(x+20,y+20,20,20);
@@ -81,7 +84,7 @@ public class Flower
         pPetal4.fill();
         stem1.draw();
 
-        
+
     }
 
 }

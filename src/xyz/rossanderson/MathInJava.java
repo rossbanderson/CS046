@@ -1,9 +1,11 @@
+package xyz.rossanderson.cs046;
+
 // BlueJ project: lesson4/turningMathToJava
 // Video: Arithmetic Operations 2
 
 // TODO: The amdahlSpeedup, crossRatio and average methods
-// aren't working yet. Use the fact sheet and your new 
-// knowledge of math expressions in java to fix these methods. 
+// aren't working yet. Use the fact sheet and your new
+// knowledge of math expressions in java to fix these methods.
 
 public class MathInJava
 {
@@ -45,13 +47,13 @@ public class MathInJava
     }
 
     /**
-      Computes the average of four values.
-      @param a the first value
-      @param b the second value
-      @param c the third value
-      @param d the fourth value
-      @return the average of the four values
-    */
+     Computes the average of four values.
+     @param a the first value
+     @param b the second value
+     @param c the third value
+     @param d the fourth value
+     @return the average of the four values
+     */
     public double average(int a, int b, int c, int d)
     {
         // To do!

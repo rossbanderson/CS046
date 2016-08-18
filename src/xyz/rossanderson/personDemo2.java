@@ -1,13 +1,15 @@
+package xyz.rossanderson.cs046;
+
 // Bluej project: lesson3/friends4
 /** mock up of social network - allows people to get added to each other friends lists and display their photo and links to each of their friends.
-*/
+ */
 public class PersonDemo2
 {
     private String name;
     private String friends;
     private int x;
     private int y;
-    // TODO Part 1: Create two additional instance int variables called x and y 
+    // TODO Part 1: Create two additional instance int variables called x and y
     // to store the values of xCoord and yCoord variables that are passed
     // into the Person constructor below
     //
@@ -31,8 +33,8 @@ public class PersonDemo2
         // For example (here's a freebie for you!):
         // x = xCoord;
     }
-    
-    public void addFriend(Person friend) 
+
+    public void addFriend(Person friend)
     {
         friends = friends + friend.name + " ";
         SmallCircle circle = new SmallCircle(x,y);
@@ -54,7 +56,7 @@ public class PersonDemo2
         // and the draw the circle by calling the fill() function. For example:
         // circle.fill();
         //
-        // Second, draw a line from the small circle above to 
+        // Second, draw a line from the small circle above to
         // the friend object that is passed into the addFriend function.
         //
         // For example:
@@ -78,8 +80,8 @@ public class PersonDemo2
     {
         friends = friends.replace(nonFriend.name + " ", "");
     }
-    
-    public String getFriends() 
+
+    public String getFriends()
     {
         return friends;
     }
