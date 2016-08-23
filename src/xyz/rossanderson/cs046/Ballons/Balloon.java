@@ -31,5 +31,24 @@ package xyz.rossanderson.cs046.Ballons;
  */
 public class Balloon
 {
+    private double airVol = 0;
+    private Double radius;
+    private Double surfaceArea;
+
+    public void addAir(double amount) {
+        this.airVol = this.airVol + amount;
+        this.radius = (Math.cbrt((this.airVol*(3./4.)/Math.PI)));
+        this.surfaceArea = (4*Math.PI*(Math.pow(radius,2)));
+    }
+    public double getVolume(){
+        return airVol;
+    }
+    public double getSurfaceArea(){
+        return surfaceArea;
+    }
+    public double getRadius(){
+        return radius;
+    }
+
 
 }
